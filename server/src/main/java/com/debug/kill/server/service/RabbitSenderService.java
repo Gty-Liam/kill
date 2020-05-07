@@ -85,7 +85,7 @@ public class RabbitSenderService {
                         @Override
                         public Message postProcessMessage(Message message) throws AmqpException {
                             MessageProperties mp=message.getMessageProperties();
-                            mp.setDeliveryMode(MessageDeliveryMode.PERSISTENT);
+                            mp.setDeliveryMode(MessageDeliveryMode.PERSISTENT);  // 持久化 保证消息的可靠性
                             mp.setHeader(AbstractJavaTypeMapper.DEFAULT_CONTENT_CLASSID_FIELD_NAME,KillSuccessUserInfo.class);
 
                             //TODO：动态设置TTL(为了测试方便，暂且设置10s)

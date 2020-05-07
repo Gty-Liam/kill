@@ -19,7 +19,7 @@ import java.util.List;
  * @Date: 2019/6/29 21:26
  **/
 @Service
-public class SchedulerService {
+public class    SchedulerService {
 
     private static final Logger log= LoggerFactory.getLogger(SchedulerService.class);
 

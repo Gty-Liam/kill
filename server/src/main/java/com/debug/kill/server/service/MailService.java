@@ -23,7 +23,7 @@ import javax.mail.internet.MimeMessage;
  **/
 @Service
 @EnableAsync
-public class MailService {
+public class    MailService {
 
     private static final Logger log= LoggerFactory.getLogger(MailService.class);
 
